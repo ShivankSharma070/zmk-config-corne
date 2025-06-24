@@ -100,10 +100,10 @@
 
         nav_layer {
             bindings = <
-&none   &trans  &trans  &trans  &trans         &trans       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP     &kp END       &trans  &none
-&none   &trans  &trans  &trans  &kp BACKSLASH  &kp TILDE    &kp LEFT    &kp DOWN       &kp UP          &kp RIGHT     &trans  &none
-&trans  &to 4   &trans  &trans  &kp PIPE       &kp GRAVE    &trans      &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_CUT  &trans  &none
-                        &trans  &trans         &trans       &kp DELETE  &tmux_leader   &key_repeat
+&none   &trans  &trans  &trans  &trans         &trans       &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END         &trans  &none
+&none   &trans  &trans  &trans  &kp BACKSLASH  &kp TILDE    &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT       &trans  &none
+&trans  &to 4   &trans  &trans  &kp PIPE       &kp GRAVE    &kp C_AC_COPY  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_PASTE  &trans  &none
+                        &trans  &trans         &trans       &kp DELETE     &tmux_leader    &key_repeat
             >;
         };
 
