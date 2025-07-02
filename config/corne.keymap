@@ -70,7 +70,7 @@
 &none  &kp Q           &kp W           &kp E           &kp R        &kp T          &kp Y      &kp U            &kp I        &kp O            &kp P               &none
 &none  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LSHIFT D    &hm LCTRL F  &kp G          &kp H      &hm RCTRL J      &hm RSHFT K  &hm RIGHT_ALT L  &hm RGUI SEMICOLON  &none
 &none  &kp Z           &kp X           &kp C           &kp V        &kp B          &kp N      &kp M            &kp COMMA    &kp DOT          &kp FSLH            &none
-                                       &kp LEFT_SHIFT  &mo 1        &lt 3 ENTER    &kp SPACE  &lt 1 BACKSPACE  &kp ESCAPE
+                                       &kp LEFT_SHIFT  &mo 1        &lt 4 ENTER    &kp SPACE  &lt 1 BACKSPACE  &kp ESCAPE
             >;
         };
 
@@ -82,10 +82,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK  &kp LPAR        &kp RPAR         &none
-&none  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp EQUAL  &kp UNDERSCORE  &kp DQT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none
-&none  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp PLUS   &kp MINUS       &kp SQT    &kp LBKT        &kp RBKT         &none
-                         &trans    &mo 2     &kp TAB      &trans     &trans          &trans
+&none  &kp EXCL       &kp AT     &kp HASH       &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS        &kp ASTRK  &kp LPAR        &kp RPAR         &none
+&none  &kp PIPE       &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp COLON    &kp EQUAL  &kp UNDERSCORE  &kp DQT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none
+&none  &kp BACKSLASH  &kp GRAVE  &trans         &trans            &trans       &kp PLUS   &kp MINUS       &kp SQT    &kp LBKT        &kp RBKT         &none
+                                 &trans         &trans            &trans       &trans     &trans          &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&none  &trans  &trans  &trans      &trans  &trans     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp N1  &kp N2  &kp N3      &kp N4  &kp N5     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
+&none  &kp N6  &kp N7  &kp N8      &kp N9  &kp N0     &trans  &trans  &trans  &trans  &trans  &none
+                       &caps_word  &mo 3   &kp TAB    &trans  &trans  &trans
             >;
         };
 
@@ -100,10 +109,10 @@
 
         nav_layer {
             bindings = <
-&none   &trans  &trans  &trans  &trans         &trans       &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END         &trans  &none
-&none   &trans  &trans  &trans  &kp BACKSLASH  &kp TILDE    &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT       &trans  &none
-&trans  &to 4   &trans  &trans  &kp PIPE       &kp GRAVE    &kp C_AC_COPY  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_PASTE  &trans  &none
-                        &trans  &trans         &trans       &kp DELETE     &tmux_leader    &key_repeat
+&none  &trans  &trans  &trans  &trans  &trans    &kp HOME       &kp PAGE_DOWN   &kp PAGE_UP   &kp END         &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT       &trans  &none
+&none  &to 5   &trans  &trans  &trans  &trans    &kp C_AC_COPY  &msc SCRL_DOWN  &msc SCRL_UP  &kp C_AC_PASTE  &trans  &none
+                       &trans  &trans  &trans    &kp DELETE     &tmux_leader    &key_repeat
             >;
         };
 
