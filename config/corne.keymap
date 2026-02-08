@@ -54,6 +54,12 @@
             key-positions = <17 18>;
             layers = <0>;
         };
+
+        esc_combo {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
     };
 
     keymap {
