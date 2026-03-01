@@ -59,7 +59,7 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <220>;
         };
     };
 
